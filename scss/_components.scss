@@ -1,0 +1,140 @@
+/*=========================================================
+================     COMPONENTS STYLES    =================
+=========================================================*/
+
+// Icons
+.icon {
+  &--social {
+    border: 1px solid currentColor;
+    border-radius: 50%;
+
+    color: $white;
+
+    height: clamp(pxToRem(28), 5vw, pxToRem(40));
+
+    transition: color 300ms ease-in-out, border-color 300ms ease-in-out;
+
+    width: clamp(pxToRem(28), 5vw, pxToRem(40));
+
+    svg {
+      width: clamp(pxToRem(13), 1.5vw, pxToRem(18));
+      height: clamp(pxToRem(13), 1.5vw, pxToRem(18));
+    }
+
+    &:hover {
+      color: $softMagenta;
+    }
+  }
+}
+
+// Buttons
+.btn {
+  border: none;
+
+  cursor: pointer;
+
+  display: inline-block;
+
+  text-decoration: none;
+
+  &--register {
+    background-color: $white;
+    border-radius: clamp(pxToRem(19), 3vw, pxToRem(26));
+    box-shadow: 0 pxToRem(5) pxToRem(15) pxToRem(-7) $black;
+
+    color: $violet;
+
+    font: {
+      family: $fontFamilyPoppins;
+      size: clamp(pxToRem(13), 2vw, pxToRem(19));
+      weight: $fontWeightRegular;
+    }
+
+    letter-spacing: clamp(-0.04em, 1vw, -0.03em);
+    line-height: pxToRem(17);
+
+    padding-block: pxToRem(13) pxToRem(10);
+    padding-inline: pxToRem(15);
+
+    width: pxToRem(200);
+
+    transition: transform 100ms ease-in-out, background-color 300ms ease-in-out,
+      color 300ms ease-in-out;
+
+    &:hover {
+      background-color: $softMagenta;
+      color: $white;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+
+    @include media-breakpoint-up(md) {
+      padding-block: pxToRem(18) pxToRem(21);
+    }
+  }
+}
+
+// Header section
+.header {
+  margin-block-end: pxToRem(62);
+
+  &__logo {
+    width: clamp(pxToRem(135), 15vw, pxToRem(210));
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-block-end: pxToRem(90);
+  }
+}
+
+// Main section
+.main {
+  margin-block-end: pxToRem(64);
+
+  &__mockups {
+    margin-block-end: pxToRem(62);
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+    }
+  }
+
+  &__content {
+    @include media-breakpoint-up(lg) {
+      padding-block-start: pxToRem(40);
+    }
+  }
+
+  &__title {
+    font: {
+      size: clamp($fontSizeMainHeadingSm, 5vw, $fontSizeMainHeadingLg);
+      weight: $fontWeightSemiBold;
+      family: $fontFamilyPoppins;
+    }
+
+    letter-spacing: clamp(-0.05em, 1vw, -0.045em);
+    line-height: clamp(pxToRem(37), 5vw, pxToRem(59));
+
+    margin-block: 0 pxToRem(11);
+
+    @include media-breakpoint-up(lg) {
+      margin-block-end: pxToRem(20);
+    }
+  }
+
+  &__description {
+    font-size: clamp($fontSizeDescriptionSm, 4vw, $fontSizeDescriptionLg);
+    letter-spacing: clamp(-0.03em, 1vw, -0.045em);
+    line-height: clamp(pxToRem(24), 2vw, pxToRem(27));
+
+    margin-block: 0 pxToRem(25);
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin-block-end: pxToRem(27);
+  }
+}
+
+// Footer section

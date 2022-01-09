@@ -1,0 +1,32 @@
+/*=========================================================
+================      LAYOUT STYLES       =================
+=========================================================*/
+
+.icon {
+  &--social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.main {
+  @include media-breakpoint-up(lg) {
+    display: grid;
+
+    grid-template-columns: 1.3fr 1fr;
+    column-gap: pxToRem(59);
+  }
+}
+
+.footer {
+  &__social {
+    display: flex;
+    column-gap: pxToRem(11);
+    justify-content: center;
+
+    @include media-breakpoint-up(lg) {
+      justify-content: flex-end;
+    }
+  }
+}
