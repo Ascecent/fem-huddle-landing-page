@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/huddle-langind-page-with-sass-flexbos-and-grid-YuXYmnPaC)
+- Live Site URL: [Github Pages](https://ascecent.github.io/fem-huddle-landing-page/)
 
 ## My process
 
